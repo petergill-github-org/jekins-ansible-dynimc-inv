@@ -3,6 +3,7 @@ provider "aws"{
 }
 
 resource "aws_instance" "AWSInstatance"{
+	count = "3"
 	ami = "ami-08d9bb4bfe39be5c2"
 	instance_type = "t2.micro"
 	key_name = "devOps"
